@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# Webex tkinter application
+# author: r0thl3ss
+
 from tkinter import *
 import webbrowser
 import pathlib
