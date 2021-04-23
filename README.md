@@ -1,9 +1,9 @@
 ***
 # eclass_webex_tkinter
 A python tkinter application for webex links and lessons, including functionality to add extra buttons useful for school
+***
 
 # config.json
-***
 ##  webex_link_prefix 
 Your link prefix might be different for your school so you should check it out!
 
