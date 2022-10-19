@@ -14,13 +14,12 @@ with open(current_folder + "config.json", encoding="utf-8") as read_file:
     config = json.load(read_file)
 
 book_color = config["book_color"]
-webex_link = config["webex_link_prefix"]
+webex_link = config["webex_link"]
 books_folder = current_folder + config["books_folder"]
 book_text = config["book_text"]
 
 window = Tk()
 window.title("Eclass")
-# window.geometry("677x281")
 window.geometry("677x307")
 
 # Labels for days
@@ -47,6 +46,7 @@ for i in config["lessons"]:
     Button(window, text=book_text,
       command=lambda lesson=lesson: webbrowser.open(books_folder + "\\" + lesson[2]),
       height=1, width=11, fg=book_color).grid(column=lesson[4], row=2*int(lesson[3]))
+    
 # Extra loop
 extra_count = 1
 for i in config["extra"]:
@@ -57,4 +57,6 @@ for i in config["extra"]:
       command=lambda extra_i=extra_i: webbrowser.open(extra_i[1]),
       height=1, width=11, fg=extra_i[2]).grid(column=extra_count, row=11)
   extra_count += 1
+
+# Initiating
 window.mainloop()
