@@ -4,8 +4,8 @@ A python tkinter application for webex links and lessons, including functionalit
 ***
 
 # config.json
-##  webex_link_sub
-Webex subdomain for your school.
+##  webex_link
+Webex link for your school, because you might have different subdomain.
 
 ##  book_color
 Here you can set your preferred color for the book button.
