@@ -1,6 +1,9 @@
 ***
 # eclass-webex-tkinter
 A python tkinter application for webex links and lessons, including functionality to add extra buttons useful for school
+End result should look like this:  
+
+![alt text](example.png)
 ***
 
 # config.json
